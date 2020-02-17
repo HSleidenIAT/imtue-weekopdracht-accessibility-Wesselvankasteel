@@ -30,7 +30,7 @@
 
 
     <form class="search">
-      <input type="search" name="q" placeholder="Search query">
+      <input type="search" name="q" placeholder="Search query"><!-- REVIEW: geen aria-label -->
       <button type="submit">Go!</button>
     </form>
   </nav>
@@ -68,7 +68,7 @@
       <table summary="A table with all the difference between a wild bear and a urban bear">
         <thead>
           <tr>
-            <td>Bear Type</td>
+            <td>Bear Type</td><!-- REVIEW: dit is een celhoofd, geef ook aan of die voor een rij of kolom is -->
             <td>Coat</td>
             <td>Adult size</td>
             <td>Habitat</td>
@@ -78,7 +78,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Wild</td>
+            <td>Wild</td><!-- REVIEW: dit is een celhoofd -->
             <td>Brown or black</td>
             <td>1.4 to 2.8 meters</td>
             <td>Woods and forests</td>
@@ -86,7 +86,7 @@
             <td>Fish, meat, plants</td>
           </tr>
           <tr>
-            <td>Urban</td>
+            <td>Urban</td><!-- REVIEW: dit is een celhoofd -->
             <td>North Face</td>
             <td>18 to 22</td>
             <td>Condos and coffee shops</td>
@@ -106,7 +106,7 @@
             country houses. They tend to live in relative isolation, in caves, tents, or cottages.
           </p>
 
-          <img src="media/wild-bear.jpg" aria-labelledby="Picture of a wild bear walking in a river">
+          <img src="media/wild-bear.jpg" aria-labelledby="Picture of a wild bear walking in a river"><!-- REVIEW: verkeerd toegepast, zie https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#Text_alternatives -->
 
           <p>
             Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban
@@ -162,15 +162,15 @@
 
               <form class="comment-form">
                 <div class="flex-pair">
-                  Your name:
-                  <input type="text" name="name" id="name" placeholder="Enter your name">
+                  Your name:<!-- REVIEW: gebruik een label -->
+                  <input type="text" name="name" id="name" placeholder="Enter your name"><!-- REVIEW: geen aria-label -->
                 </div>
                 <div class="flex-pair">
                   Your comment:
-                  <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                  <input type="text" name="comment" id="comment" placeholder="Enter your comment"><!--  -->
                 </div>
                 <div>
-                  <button class="show-hide" type="submit">Submit comment</button>
+                  <button class="show-hide" type="submit">Submit comment</button><!-- REVIEW: hmm, lijkt gekopieerd van hierboven, klopt de class? -->
                 </div>
               </form>
 
